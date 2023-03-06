@@ -6,4 +6,6 @@ def func4(request):
 
 def count(request):
     fulltext=request.GET['fulltext']
-    return render(request,'count.html',{'fulltext':fulltext})
+    fulltext1=request.GET['fulltext1']
+    
+    return render(request,'count.html',{'lll':fulltext, 'jjj':fulltext1})
